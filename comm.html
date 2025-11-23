@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Commission - Artiloka</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles/comm.css">
+</head>
+
+<body>
+    <div class="commission-container" id="commission-container">
+        <div class="container mt-4">
+            <div class="input-group mb-2">
+                <span class="input-group-text bg-white border-end-0"><img src="Assets/icon/ic-search.png" alt=""
+                        style="width: 15px;"></span>
+                <input type="text" class="form-control border-start-0" placeholder="Search for commission">
+            </div>
+            <div class="tab mb-3" role="tablist" aria-label="Commission filters">
+                <div class="tab-pill" role="presentation">
+                    <button class="rectangle-2" role="tab" aria-selected="true" aria-controls="popular-panel"
+                        id="popular-tab"><span class="text-wrapper-2">Popular</span>
+                    </button>
+                    <button class="rectangle-3" role="tab" aria-selected="false" aria-controls="recently-panel"
+                        id="recently-tab"><span class="text-wrapper-3">Recently</span>
+                    </button>
+                </div>
+                <button class="filter" data-bs-toggle="offcanvas" data-bs-target="#filterPanel">
+                    <img src="Assets/icon/ic-filter.png" alt="" style="width: 20px;" />
+                </button>
+            </div>
+            <div class="commission-content">
+                <div class="row">
+                    <!-- Commission -->
+                    <main class="col-md">
+                        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-3">
+                            <div class="col">
+                                <div class="card">
+                                    <a href="comm-page-desc.html" class="card-img" style="aspect-ratio: 19 / 10; background: #FFCD9A;">
+                                        <img src="Assets/img/Close-up-comm.png" class="card-img-top"
+                                            style="width: 100%; height: 100%; object-fit: contain;">
+                                    </a>
+
+                                    <a href="#" style="position: absolute ;bottom: 65px; left: 10px; z-index: 10;">
+                                        <img src="Assets/icon/label-open.png" alt="Open"
+                                            style="height: 15px; width: auto;"> </a>
+                                    <div class="card-body p-2">
+                                        <small><b>Chibi Character</b></small><br>
+                                        <div class="d-flex justify-content-between">
+                                            <small><img class="pfp" src="Assets/pfp/pfp-ixycan.png" alt=""
+                                                    style="height: 20px; margin-right: 10px; border-radius: 100%;">ixycan
+                                                | Open Commission!</small>
+                                            <span class="fw-bold">⭐ 5.0</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <div class="card-img"
+                                        style="aspect-ratio: 19 / 10; overflow: hidden; background: #FFA0A3;">
+                                        <img src="Assets/img/__sensei_roland_and_u_official_blue_archive_and_4_more_drawn_by_speedyb0i__sample-5ecfa3d32c940ac13fea697ff916717d.jpg"
+                                            class="card-img-top"
+                                            style="width: 100%; height: 100%; object-fit: contain;">
+                                    </div>
+
+                                    <a href="#" style="position: absolute ;bottom: 65px; left: 10px; z-index: 10;">
+                                        <img src="Assets/icon/label-waitlist.png" alt="Open"
+                                            style="height: 15px; width: auto;"> </a>
+                                    <div class="card-body p-2">
+                                        <small><b>Arknights Comic</b></small><br>
+                                        <div class="d-flex justify-content-between">
+                                            <small><img class="pfp" src="Assets/pfp/pfp-speedyboi.jpg" alt=""
+                                                    style="height: 20px; margin-right: 10px; border-radius: 100%;">Sp33dyB0i</small>
+                                            <span class="fw-bold">⭐ 5.0</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <div class="card-img"
+                                        style="aspect-ratio: 19 / 10; overflow: hidden; background: #93A9B3;">
+                                        <img src="Assets/img/nuh-uh-nuh-uh-meme.gif" class="card-img-top"
+                                            style="width: 100%; height: 100%; object-fit: contain;">
+                                    </div>
+
+                                    <a href="#" style="position: absolute ;bottom: 65px; left: 10px; z-index: 10;">
+                                        <img src="Assets/icon/label-open.png" alt="Open"
+                                            style="height: 15px; width: auto;"> </a>
+                                    <div class="card-body p-2">
+                                        <small><b>Custom nuh uh GIF</b></small><br>
+                                        <div class="d-flex justify-content-between">
+                                            <small><img class="pfp" src="Assets/pfp/pfp-reference.png" alt=""
+                                                    style="height: 20px; margin-right: 10px; border-radius: 100%;">Reference</small>
+                                            <span class="fw-bold">⭐ 5.0</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <div class="card-img"
+                                        style="aspect-ratio: 19 / 10; overflow: hidden; background: #CFC6BF;">
+                                        <img src="Assets/img/YouCut_20251016_211735235.gif" class="card-img-top"
+                                            style="width: 100%; height: 100%; object-fit: contain;">
+                                    </div>
+
+                                    <a href="#" style="position: absolute ;bottom: 65px; left: 10px; z-index: 10;">
+                                        <img src="Assets/icon/label-open.png" alt="Open"
+                                            style="height: 15px; width: auto;"> </a>
+                                    <div class="card-body p-2">
+                                        <small><b>Signature look of superiority</b></small><br>
+                                        <div class="d-flex justify-content-between">
+                                            <small><img class="pfp" src="Assets/pfp/pfp-reference.png" alt=""
+                                                    style="height: 20px; margin-right: 10px; border-radius: 100%;">Reference</small>
+                                            <span class="fw-bold">⭐ 5.0</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <div class="card-img"
+                                        style="aspect-ratio: 19 / 10; overflow: hidden; background: #CFC6BF;">
+                                        <img src="Assets/img/NeuroTutelSchedule.gif" class="card-img-top"
+                                            style="width: 100%; height: 100%; object-fit: contain;">
+                                    </div>
+
+                                    <a href="#" style="position: absolute ;bottom: 65px; left: 10px; z-index: 10;">
+                                        <img src="Assets/icon/label-open.png" alt="Open"
+                                            style="height: 15px; width: auto;"> </a>
+                                    <div class="card-body p-2">
+                                        <small><b>what schedule</b></small><br>
+                                        <div class="d-flex justify-content-between">
+                                            <small><img class="pfp" src="Assets/pfp/pfp-reference.png" alt=""
+                                                    style="height: 20px; margin-right: 10px; border-radius: 100%;">Reference</small>
+                                            <span class="fw-bold">⭐ 5.0</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </main>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="filterPanel">
+        <div class="offcanvas-header" style="padding-bottom: 0px;">
+            <button class="btn" data-bs-dismiss="offcanvas">
+                <img src="Assets/icon/ic-close.png" style="width: 15px; margin-right: 5px;">
+            </button>
+            <h5 class="offcanvas-title fw-bold">Filter</h5>
+            <h5 class="offcanvas-reset fw-bold">Reset</h5>
+        </div>
+
+        <div class="offcanvas-body">
+            <h6 class="category-title">Category</h6>
+            <div class="category-options">
+                <button class="category-btn mb-1">Digital Illustration</button>
+                <button class="category-btn2 mb-1">Graphic Design</button>
+                <button class="category-btn3 mb-1">Graphic Asset</button>
+                <button class="category-btn4 mb-1">Comic and Manga</button>
+                <button class="category-btn5 mb-1">Character Design</button>
+                <button class="category-btn6 mb-1">Logo Design & Branding</button>
+                <button class="category-btn7 mb-1">Animation & Motion Graphic</button>
+                <button class="category-btn8 mb-1">Art Painting</button>
+                <button class="category-btn9 mb-1">3D Art</button>
+                <button class="category-btn10 mb-1">Photography</button>
+                <button class="category-btn11 mb-1">UI/UX Design</button>
+                <button class="category-btn12 mb-1">Emote & Badge</button>
+                <button class="category-btn13 mb-1">Vtuber Asset</button>
+                <button class="category-btn14 mb-1">Fanart</button>
+                <button class="category-btn15 mb-1">Background Art & Enviroment</button>
+            </div>
+            <hr class="line-border">
+            <h6 class="category-title">Availability</h6>
+            <div class="comm-avail">
+                <div class="comm-status"><small>Commission Open</small></div>
+                <div class="comm-status"><small>Still in Waitlist</small></div>
+            </div>
+            <hr class="line-border">
+            <h6 class="category-title">Request Type</h6>
+            <div class="comm-reqtype">
+                <div class="comm-type"><small>Custom Proposal</small>
+                    <p>Commit after proposal</p>
+                </div>
+                <div class="comm-type"><small>Instant Order</small>
+                    <p>Commit at request</p>
+                </div>
+            </div>
+            <hr class="line-border">
+            <h6 class="category-title">Artist Rating</h6>
+            <div class="comm-rating-cb">
+                <label class="cb-container">⭐ 5
+                    <input type="checkbox" checked="checked">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="cb-container">⭐ 4+
+                    <input type="checkbox" checked="checked">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="cb-container">⭐ 3+
+                    <input type="checkbox" checked="checked">
+                    <span class="checkmark"></span>
+                </label>
+            </div>
+            <hr class="line-border">
+            <h6 class="category-title" style="margin-bottom: 0px;">Price Range</h6>
+            <div class="comm-price-range">
+                <div class="price-labels">
+                    <span class="price-min" style="font-size:x-small;">0</span>
+                    <input type="number" class="price-input" placeholder="Min">
+                </div>
+                <div class="price-labels">
+                    <span class="price-max" style="font-size:x-small">0</span>
+                    <input type="number" class="price-input" placeholder="Max">
+                </div>
+            </div>
+            <hr class="line-border">
+            <div class="gradient-border-button">
+                <button class="apply-filter-btn">Apply</button>
+            </div>
+        </div>
+    </div>
+
+    <nav class="bottom-navbar">
+        <a href="home.html" class="nav-item" data-page="home-page" data-title="Home">
+            <div class="nav-icon"><img src="Assets/icon/ic-home.png"></div>
+        </a>
+        <a href="artwork.html" class="nav-item" data-page="search-page" data-title="Artwork">
+            <div class="nav-icon"><img src="Assets/icon/ic-artwork-s.png"></div>
+        </a>
+        <a href="comm.html" class="nav-item" data-page="commission-page" data-title="Commission">
+            <div class="nav-icon"><img src="Assets/icon/ic-comm-s.png"></div>
+        </a>
+        <a class="nav-item" data-page="shop-page" data-title="Shop">
+            <div class="nav-icon"><img src="Assets/icon/ic-shop-s.png"></div>
+        </a>
+        <a class="nav-item" data-page="profile-page" data-title="Profile">
+            <div class="nav-icon-profile"><img src="Assets/pfp/pfp-user.jpg"></div>
+        </a>
+    </nav>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</html>
