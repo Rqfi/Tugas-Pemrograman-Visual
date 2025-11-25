@@ -633,3 +633,18 @@ button.filter {
 .apply-filter-btn:hover {
     background-color: #f0f0f0; 
 }
+
+/* Default: desaturate bottom navbar icons so they appear muted */
+.bottom-navbar .nav-icon img,
+.bottom-navbar .nav-icon-profile img {
+    filter: grayscale(100%) opacity(0.65);
+    transition: filter 0.18s ease, opacity 0.18s ease, transform 0.18s ease;
+}
+
+/* Active page: show full color and slight scale */
+.bottom-navbar .nav-item.active .nav-icon img,
+.bottom-navbar .nav-item.active .nav-icon-profile img {
+    filter: none;
+    opacity: 1;
+    transform: scale(1.05);
+}

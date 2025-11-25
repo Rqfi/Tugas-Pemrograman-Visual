@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #F8F7F8;
+    color: #333;
+}
+
+/* Container Adjustments */
+.navbar .container {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.navbar {
+    padding: 0rem;
+    padding-bottom: 1px;
+    margin-bottom: 1rem;
+}
+
+/* Button Styles */
+.back-container {
+    padding: 0px 10px 0 0;
+    text-decoration: none;
+    background-color: #fff;
+    width: auto;
+    height: auto;
+    padding: 5px 10px;
+    border-radius: 5px;
+    position: relative;
+    z-index: 2;
+}
+
+@media (max-width: 991px) {
+    .sticky-lg-top {
+        position: static !important;
+        /* Disable sticky on mobile/tablet */
+    }
+
+    /* On mobile, create a fixed bottom bar for the CTA button like the original design */
+    .col-lg-5 .mt-4.pt-3.border-top {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background: white;
+        padding: 15px 20px;
+        box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1);
+        z-index: 1000;
+        margin-top: 0 !important;
+        border-top: none !important;
+    }
+
+    /* Add padding to body so content isn't hidden behind fixed button */
+    body {
+        padding-bottom: 20px;
+    }
+}
+
+.navbar {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #232227;
+    min-height: 120px;
+    max-height: 120px;
+    display: flex;
+    position: relative;
+    margin-bottom: 25px;
+    align-content: flex-start;
+}
+
+.navbar::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: var(--overlay);
+    /* let pointer events pass so links/buttons remain clickable */
+    pointer-events: none;
+    z-index: 0;
+}
+
+.navbar .text-white-50 {
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.navbar.fullscreen {
+    min-height: 100vh;
+}
+
+.pfp {
+    border-radius: 50%;
+    padding: 1.5px;
+    background: linear-gradient(90deg, #041562, #DA1212);
+}
+
+/* Badge for single artwork items (e.g., "Commission") */
+.artwork-card {
+    position: relative; /* allow absolute badge inside */
+    overflow: hidden;
+}
+
+.card-badge {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    background: linear-gradient(90deg, #041562 0%, #da1212 100%);
+    color: #fff;
+    font-size: 11px;
+    font-weight: 600;
+    padding: 4px 8px;
+    border-radius: 12px;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    z-index: 5;
+}
+
+.card-badge .badge-icon {
+    width: 12px;
+    height: 12px;
+    display: inline-block;
+    background: rgba(255,255,255,0.12);
+    border-radius: 50%;
+}
+
+/* Image-based badge (use an icon image file) */
+.card-badge-img {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    width: 92px; /* default width, adjust as needed */
+    height: auto;
+    z-index: 5;
+    object-fit: cover;
+}
+
+.sold-badge-img {
+    position: absolute;
+    width: 50px; /* default width, adjust as needed */
+    height: auto;
+    z-index: 5;
+    object-fit: cover;
+}
+
+.custom-tabs {
+    background-color: #F2F2F2;
+    /* Warna abu-abu muda untuk track */
+    border-radius: 10px;
+    /* Membuat sudut membulat penuh */
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Styling Tombol Tab Default (Tidak Aktif) */
+.nav-pills .nav-link {
+    color: #444;
+    /* Warna teks abu-abu saat tidak aktif */
+    background: transparent;
+    border-radius: 10px;
+    font-weight: 600;
+    padding: 0.5rem 3rem;
+    width: 100%;
+    height: 45px;
+    /* Memastikan tombol mengisi container */
+    transition: all 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Styling Tombol Tab Aktif */
+.nav-pills .nav-link.active {
+    /* Menggunakan gradient sesuai tema Artiloka (diambil dari tombol Start Request) */
+    background: linear-gradient(90deg, #041562 0%, #da1212 100%);
+    color: white;
+}
+
+/* Hover effect */
+.nav-pills .nav-link:hover:not(.active) {
+    background-color: #e0e0e0;
+    color: #041562;
+}
+
+.nav button {
+    display: flex;
+    flex: auto;
+    border: none;
+    height: 28px;
+    border-radius: 8px;
+    background: transparent;
+    color: #444;
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.nav button[aria-selected="true"] {
+    background: linear-gradient(90deg, #5612d6 0%, #da1212 100%);
+    color: #fff;
+}
+
+.nav-item {
+    display: flex;
+    flex: 1 1 0;
+    min-width: 0;
+    /* Ensures all nav items share equal width and stay in 1 row */
+}
+
+.nav-item.w-30 {
+    flex: 1 1 0;
+}
+
+/* Styling untuk tab nested/inner tabs (lebih kecil) */
+.artwork .custom-tabs {
+    padding: 3px;
+    gap: 8px;
+    justify-content: flex-start;
+    width: fit-content;
+}
+
+.artwork .custom-tabs .nav-link {
+    padding: 0.35rem 0.75rem;
+    height: 32px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.artwork .custom-tabs .nav-item {
+    flex: 0 1 auto;
+    width: auto;
+}
+
+.artwork-card {
+    background-color: white;
+    border: none;
+    aspect-ratio: 1/1;
+    border-radius: 10px;
+}
+
+.card {
+    border: none;
+}
+
+.prod-card {
+    background-color: white;
+    border: none;
+    aspect-ratio: 1/1;
+    border-radius: 10px;
+}
+
+.product-img {
+    width: 100%;
+    aspect-ratio: 1/1;
+    display: block;
+    object-fit: contain;
+}
+
+.bg-product-img {
+    aspect-ratio: 1/1;
+    display: block;
+    margin: auto;
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Truncate long product titles with ellipsis */
+.prod-card .p-2 small:first-child,
+.prod-card .p-2 .product-title {
+    display: block; /* make sure width applies */
+    width: 100%;
+    white-space: nowrap; /* single-line */
+    overflow: hidden;
+    text-overflow: ellipsis; /* show ... */
+}
+
+/* Optional multi-line clamp (2 lines). Apply class `.product-title--multiline` to use this instead */
+.prod-card .p-2 .product-title--multiline {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
