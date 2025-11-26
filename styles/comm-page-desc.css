@@ -49,6 +49,8 @@ body {
     padding: 5px;
     display: flex;
     justify-content: space-between;
+    gap: 8px;
+    flex-wrap: nowrap;
 }
 
 /* Styling Tombol Tab Default (Tidak Aktif) */
@@ -72,7 +74,6 @@ body {
     /* Menggunakan gradient sesuai tema Artiloka (diambil dari tombol Start Request) */
     background: linear-gradient(90deg, #041562 0%, #da1212 100%);
     color: white;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 /* Hover effect */
